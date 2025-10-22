@@ -3,11 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Grocery List</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+    <div class="container">
+        <h1>Grocery List Manager</h1>
+
+        <div class="addItem">
+            <input type="text" name="newitem" id="newitem">
+            <button id="addbtn">Add Item</button>
+        </div>
+
+        <div class="filters">
+            <button id="ShowAll">All Items</button>
+            <button id="unpurchased">Unpurchased</button>
+            <button id="purchased">Purchased</button>
+        </div>
+
+        <ul id="List"></ul>
+    </div>
 
     <script src="script.js"></script>
 </body>

@@ -1,0 +1,84 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1{
+    text-align: center;
+}
+
+.addItem{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.addItem input{
+    width: 250px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid rgb(216, 214, 214);
+    border-radius: 5px 0 0 5px;
+    box-sizing: border-box;
+
+}
+
+.addItem button{
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: #2eb94f;
+    color: white;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+}
+
+.addItem button:hover{
+    background-color: #218838;
+}
+
+.filters{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.filters button{
+    flex: 1;
+    margin: 0 5px;
+    padding: 10px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.filters button:hover{
+    background-color: #0056b3;
+}
+
+#List{
+    list-style-type: none;
+    padding: 0;
+}
+
+#List li{
+    padding: 10px;
+    font-size: 18px;
+    border-bottom: 1px solid #e2dfdf;
+}
+
+#List li.purchased{
+    text-decoration: line-through;
+    color: #707070;
+}
